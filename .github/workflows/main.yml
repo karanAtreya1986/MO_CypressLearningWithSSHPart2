@@ -1,0 +1,24 @@
+name: cypress testing
+
+on: push
+
+jobs:
+ testingphase:
+  runs-on: ubuntu-latest
+  strategy:
+    matrix:
+      containers: [1,2,3,4,5]
+  steps:
+   - name: Checkout
+     uses: actions/checkout@v2
+   - name: run on chrome
+     uses: cypress-io/github-action@v6
+     with:
+       spec: cypress/e2e/first.cy.js
+   - name: upload artifacts
+     uses: actions/upload-artifact@v4
+     if: always()
+     with:
+       name: cypress execution report
+       path: cypress/reports/html
+       retention-days: 20
