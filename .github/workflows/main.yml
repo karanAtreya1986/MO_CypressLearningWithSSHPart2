@@ -1,38 +1,12 @@
-name: cypress testing
+name: cypressonchrome
 
 on: push
 
 jobs:
-  testingphase:
+  chrome:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          ref: master
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-      - name: Install dependencies
-        run: npm install   # <-- This line fixes the issue
-      - name: Confirm lockfile exists
-        run: |
-          echo "Listing contents of workspace:"
-          ls -la
-          echo "Checking for lockfile:"
-          test -f package-lock.json && echo "✅ Lockfile found" || echo "❌ Lockfile missing"
-
-      - name: Run Cypress tests
-        uses: cypress-io/github-action@v6
-        with:
-          spec: cypress/e2e/first.cy.js
-          working-directory: .
-
-      - name: Upload Cypress Report
-        uses: actions/upload-artifact@v4
-        if: always()
-        with:
-          name: cypress-execution-report
-          path: cypress/reports/html
-          retention-days: 20
+        uses: actions/checkout@v2
+      - name: chrome
+        uses: cypress-io/github-action@v4
