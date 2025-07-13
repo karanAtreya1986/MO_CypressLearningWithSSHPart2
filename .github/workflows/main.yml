@@ -4,31 +4,18 @@ on: push
 
 jobs:
   testingphase:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-        with:
-          ref: master
 
       - name: Install dependencies
-        run: npm ci
+        run: npm install
 
       - name: Run Cypress tests
         uses: cypress-io/github-action@v4
         with:
           spec: cypress/e2e/first.cy.js
-
-      - name: Merge Mochawesome JSONs
-        run: |
-          npx mochawesome-merge cypress/reports/html/.jsons/*.json > mochawesome.json
-          echo "Merged report created"
-
-      - name: Generate HTML report
-        run: |
-          ls -la mochawesome.json
-          npx marge mochawesome.json -f report -o cypress/reports/html
-          echo "HTML report generated"
 
       - name: Upload Cypress Report
         uses: actions/upload-artifact@v4
