@@ -8,6 +8,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          ref: master
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
@@ -15,7 +17,6 @@ jobs:
       - name: Run Cypress tests
         uses: cypress-io/github-action@v6
         with:
-          ref: master
           spec: cypress/e2e/first.cy.js
       - name: Upload Cypress Report
         uses: actions/upload-artifact@v4
