@@ -23,12 +23,6 @@ jobs:
         with:
           spec: cypress/e2e/first.cy.js
 
-      - name: Merge Mochawesome JSON reports
-        run: npx mochawesome-merge cypress/reports/html/.jsons/*.json > mochawesome.json
-
-      - name: Generate HTML report
-        run: npx marge mochawesome.json -f report -o cypress/reports/html
-
       - name: Upload Cypress Report
         uses: actions/upload-artifact@v4
         if: always()
