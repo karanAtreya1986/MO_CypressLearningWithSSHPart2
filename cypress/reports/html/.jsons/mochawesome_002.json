@@ -1,0 +1,116 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2025-07-13T06:00:09.863Z",
+    "end": "2025-07-13T06:01:06.849Z",
+    "duration": 56986,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "1164dfd3-0337-45d1-99bb-53d1271e23f5",
+      "title": "",
+      "fullFile": "cypress\\e2e\\autosuggest2.cy.js",
+      "file": "cypress\\e2e\\autosuggest2.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "582d3351-180c-4b87-9936-f771dae280d9",
+          "title": "auto suggest google search",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "select value from google search",
+              "fullTitle": "auto suggest google search select value from google search",
+              "timedOut": null,
+              "duration": 17849,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\autosuggest2.cy.js\\\\auto suggest google search -- select value from google search (failed).png\"\n    ],\n    [\n      \"\\\\autosuggest2.cy.js\\\\auto suggest google search -- select value from google search (failed) (attempt 2).png\"\n    ],\n    [\n      \"\\\\autosuggest2.cy.js\\\\auto suggest google search -- select value from google search (failed) (attempt 3).png\"\n    ]\n  ]\n}",
+              "code": "",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `undefined`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `undefined`, but never found it.\n    at Context.eval (webpack://cypressbymukesh/./cypress/support/commands.js:57:11)\n    at wrapped (https://www.google.com/__cypress/runner/cypress_runner.js:141524:43)",
+                "diff": null
+              },
+              "uuid": "59b4fc16-49d6-4be9-8784-ff7a32c521f0",
+              "parentUUID": "582d3351-180c-4b87-9936-f771dae280d9",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "59b4fc16-49d6-4be9-8784-ff7a32c521f0"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 17849,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": false
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "reportPageTitle": "custom-title",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "saveAllAttempts": false,
+        "autoOpen": true,
+        "overwrite": false,
+        "code": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

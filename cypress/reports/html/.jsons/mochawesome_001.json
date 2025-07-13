@@ -1,0 +1,116 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2025-07-13T05:59:14.390Z",
+    "end": "2025-07-13T06:00:07.699Z",
+    "duration": 53309,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "624040c2-6c36-4a4d-af24-88d570400c4a",
+      "title": "",
+      "fullFile": "cypress\\e2e\\autosuggest.cy.js",
+      "file": "cypress\\e2e\\autosuggest.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7cc1c40c-384b-47d2-a2a9-efd4b0ff90c4",
+          "title": "auto suggest google search",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "select value from google search",
+              "fullTitle": "auto suggest google search select value from google search",
+              "timedOut": null,
+              "duration": 16282,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\autosuggest.cy.js\\\\auto suggest google search -- select value from google search (failed).png\"\n    ],\n    [\n      \"\\\\autosuggest.cy.js\\\\auto suggest google search -- select value from google search (failed) (attempt 2).png\"\n    ],\n    [\n      \"\\\\autosuggest.cy.js\\\\auto suggest google search -- select value from google search (failed) (attempt 3).png\"\n    ]\n  ]\n}",
+              "code": "",
+              "err": {
+                "message": "ReferenceError: The following error originated from your application code, not from Cypress.\n\n  > solveSimpleChallenge is not defined\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "ReferenceError: The following error originated from your application code, not from Cypress.\n\n  > solveSimpleChallenge is not defined\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at onload (https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dmukesh%2Botwani%2Bapi%2Btesting%26sca_esv%3D8db25267be52ac73%26source%3Dhp%26ei%3DVUtzaJK6NJyYseMPvNC5oAY%26iflsig%3DAOw8s4IAAAAAaHNZZQhGvV6XWT0awXggczQJ7461SQ8O%26oq%3Dmukesh%2Botwani%26gs_lp%3DEgdnd3Mtd2l6Ig1tdWtlc2ggb3R3YW5pKgIIBTIFEC4YgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABjvBTIFEAAY7wVI1BdQUliXFXABeACQAQCYAecCoAGsD6oBCDAuMTEuMS4xuAEByAEA-AEBmAIOoALyEKgCCsICChAAGAMY6gIYjwHCAgoQLhgDGOoCGI8BwgIQEC4Y0QMYAxjHARjqAhiPAcICCxAAGIAEGLEDGIMBwgIOEC4YgAQYsQMY0QMYxwHCAggQABiABBixA8ICDhAuGIAEGLEDGIMBGIoFwgILEC4YgAQYsQMYgwHCAg4QLhiABBjHARiOBRivAcICCBAuGIAEGLEDwgIREC4YgAQYsQMYgwEYxwEYrwHCAggQABiABBjJA8ICCBAAGIAEGJIDwgILEC4YgAQYxwEYrwHCAggQABiABBiiBJgDDvEF0UbuaqVixzKSBwgxLjExLjEuMaAHvLUBsgcIMC4xMS4xLjG4B-QQwgcIMC4yLjExLjHIBzw%26sclient%3Dgws-wiz%26sei%3DY0tzaNTgJPCTseMPzZXL4QQ&q=EgRnzKFgGOSWzcMGIjCcgB1p_f3_4-Io4gK93hrxYNHTBzE7TqBgjwi2mX01DHc48GJEnH1tcH5cKhWCD0IyAVJaAUM:4:316)",
+                "diff": null
+              },
+              "uuid": "3126cf4f-ae70-4242-83f6-7ec5997f5853",
+              "parentUUID": "7cc1c40c-384b-47d2-a2a9-efd4b0ff90c4",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "3126cf4f-ae70-4242-83f6-7ec5997f5853"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 16282,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": false
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "reportPageTitle": "custom-title",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "saveAllAttempts": false,
+        "autoOpen": true,
+        "overwrite": false,
+        "code": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -7,7 +7,7 @@
     "smoke": "cypress run --spec ./cypress/e2e/first.cy.js",
     "regression": "cypress run --spec ./cypress/e2e/createCourse.cy.js",
     "e2e": "cypress run",
-    "smokeonchromebrowserheaded": "cypress run --spec ./cypress/e2e/apitest.cy.js --browser=chrome --headed"
+    "smokeonchromebrowserheaded": "cypress run --spec ./cypress/e2e/login2.cy.js --browser=chrome --headed"
   },
   "author": "",
   "license": "ISC",
