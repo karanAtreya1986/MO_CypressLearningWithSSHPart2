@@ -16,6 +16,13 @@ jobs:
           node-version: 20
       - name: Install dependencies
         run: npm install   # <-- This line fixes the issue
+      - name: Confirm lockfile exists
+        run: |
+          echo "Listing contents of workspace:"
+          ls -la
+          echo "Checking for lockfile:"
+          test -f package-lock.json && echo "✅ Lockfile found" || echo "❌ Lockfile missing"
+
       - name: Run Cypress tests
         uses: cypress-io/github-action@v6
         with:
