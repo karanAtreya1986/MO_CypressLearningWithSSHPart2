@@ -29,16 +29,6 @@ jobs:
           spec: cypress/e2e/first.cy.js
           working-directory: .
 
-      - name: Merge mochawesome JSONs
-        run: |
-          npx mochawesome-merge cypress/reports/html/.jsons/*.json > mochawesome.json
-          echo "✅ JSONs merged"
-
-      - name: Generate HTML report from merged file
-        run: |
-          npx marge mochawesome.json -f report -o cypress/reports/html
-          echo "✅ HTML report generated"
-
       - name: Upload Cypress Report
         uses: actions/upload-artifact@v4
         if: always()
